@@ -50,9 +50,3 @@ plt.ylabel('Amplitude')
 plt.title('Synthetic-SCG data for a long period')
 plt.plot(x, sscg_long_visual[:desired_visual_range])
 plt.show()
-
-
-
-
-
-

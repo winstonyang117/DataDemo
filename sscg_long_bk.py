@@ -50,29 +50,3 @@ plt.ylabel('Amplitude')
 plt.title('Synthetic-SCG data for a long period')
 plt.plot(x, sscg_long_visual[:desired_visual_range])
 plt.show()
-
-
-
-
-
-
-
-
-
-# noise_signal = single_cardiac_cycle(heart_rate=70, systolic=100, diastolic=55)
-
-# # data visualization 
-# k = 4
-# y_ = noise_signal[k][:-5]
-# index_AOpoint = int(noise_signal[k][-5])
-# index_pACpoint = int(noise_signal[k][-4])
-# y_AOpoint = y_[index_AOpoint]
-# y_pACpoint = y_[index_pACpoint]
-
-# print(str(len(noise_signal[5])))
-
-# plt.figure(figsize = (16,2))
-# plt.plot(y_)
-# plt.scatter(index_AOpoint,y_AOpoint, c='r', marker='*')
-# plt.scatter(index_pACpoint,y_pACpoint, c='r', marker='*')
-# plt.show()
