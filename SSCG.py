@@ -133,8 +133,12 @@ def single_cardiac_cycle(duration=10, length=None, sampling_rate=100, heart_rate
 
 '''
 
-All the codes above are based on given ONE specific HR, it can only generate a 10s SSCG signal with labels. And the data was organized as below:
+SSCG.py can generate a 10s SSCG signal with labels. Given specific HR, systolic and diastolic, it will first generate one cardiac signal, then add noise 
+based on it. Repeating this process until we get all the cardiac cycles(= HR/6). And the data is organized as below: 
+
 signal + AO_index + pAC_index + HR + S + D
+
+It should be noted that for each cardiac cycle, the signal is resampled to length of 100. So, the total length is 105 for each row.
 
 '''
 

@@ -37,11 +37,11 @@ print('Final size of long SSCG signal is: '+str(sscg_long.shape))
 
 sscg_long_visual = sscg_long[:, :-5] # exclude the labels
 sscg_long_visual = sscg_long_visual.flatten()
-print('Total length of long SSCG signal is: '+str(sscg_long_visual.shape))
+print('Total length of long SSCG signal is: '+str(sscg_long_visual.shape[0]))
 
 
 # data visualization 
-desired_visual_range = 1000 # minmum = 100
+desired_visual_range = 10000 # minmum = 100 equals to 1 heartbeat
 x = list(range(desired_visual_range))
 x = np.array(x)/100
 plt.figure(figsize = (16,2))
