@@ -3,7 +3,7 @@ from warnings import warn
 
 import numpy as np
 
-from ..misc import NeuroKitWarning, listify
+from ..misc import warnings, listify
 from .signal_resample import signal_resample
 from .signal_simulate import signal_simulate
 

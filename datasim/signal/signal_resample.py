@@ -95,6 +95,8 @@ def signal_resample(
     scipy.signal.resample_poly, scipy.signal.resample, scipy.ndimage.zoom
 
     """
+
+    # print('the sampling rate is: '+str(sampling_rate))
     if desired_length is None:
         desired_length = int(np.round(len(signal) * desired_sampling_rate / sampling_rate))
 
