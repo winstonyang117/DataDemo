@@ -30,7 +30,7 @@ signal + AO_index + pAC_index + HR + S + D
 ```
 It should be noted that for each cardiac cycle, the signal is resampled to length of 100. So, the total length is 105 for each row.
 
-2. sscg_long.py can generate at least 1 hour SSCG data with labels based on the 'single signal(10s) generation' function in SSCG.py.
+2. sscg_long.py can generate long period  SCG data with labels based on the 'single signal(10s) generation' function in SSCG.py. For example:
 ```
 10s -> AO_index, pAC_index, HR, S, D
 1 hour = 3600s -> 360 AO_index, pAC_index, HR, S, D
