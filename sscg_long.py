@@ -40,6 +40,7 @@ sscg_long_visual = sscg_long[:, :-5] # exclude the labels
 sscg_long_visual = sscg_long_visual.flatten()
 print('Total length of long SSCG signal is: '+str(sscg_long_visual.shape[0]))
 
+np.save('sscg_data/sscg_longPeriod.npy', sscg_long)
 
 # data visualization 
 desired_visual_range = 1000 # minmum = 100 equals to 1 heartbeat
